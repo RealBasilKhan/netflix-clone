@@ -8,7 +8,7 @@ function Login() {
         <title>Netflix</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Images
+      <Image
         src="https://rb.gy/p2hphi"
         layout="fill"
         className="-z-10 !hidden opacity-60 sm:!inline"
@@ -20,13 +20,24 @@ function Login() {
         width={150}
         height={150}
       />
-      <form>
-        <h1>Sign In</h1>
-        <div>
-          <label>
-            <input type="email" placeholder="Email" />
+      <form className="relative mt-24 space-y-8 rounded bg-black/75 py-10 px-6 md:mt-0 md:max-w-md md:px-14">
+        <h1 className="text-4xl font-semibold">Sign In</h1>
+        <div className="space-y-4">
+          <label className="inline-block w-full">
+            <input type="email" placeholder="Email" className="input" />
           </label>
-          <label></label>
+          <label className="inline-block w-full">
+            <input type="password" placeholder="Password" className="input" />
+          </label>
+        </div>
+        <button className="w-full rounded bg-[#e50914] py-3 font-semibold">
+          Sign In
+        </button>
+        <div>
+          New to Netflix?
+          <button type="submit" className="text-white hover:underline">
+            Sign up now
+          </button>
         </div>
       </form>
     </div>
